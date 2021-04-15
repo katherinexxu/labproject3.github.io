@@ -95,16 +95,3 @@
     }
 }
 
-
-.button {
-    position: relative;
-    top: -40px;
-    right: -360px;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #FF8080;
-    border-radius: 10px;
-    font-size: 15px;
-    font-family: "Consolas";
-}
