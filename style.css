@@ -1,24 +1,4 @@
-/*#sun {
-    position: absolute;
-    left: 350px;
-    bottom: 75px;
-    background: radial-gradient(#FFF89E, #FFDE45);
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-}
-
-#moon {
-    position: absolute;
-    left: 350px;
-    bottom: 75px;
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    background: radial-gradient(#D3D3D3, #555AA6);
-}*/
-
-#sun {
+.sun{
     position: absolute;
     left: 600px;
     top: 300px;
@@ -67,7 +47,7 @@
     }
 }
 
-#moon {
+.moon {
    position: absolute;
     left: 600px;
     top: 300px;
