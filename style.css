@@ -1,0 +1,130 @@
+/*#sun {
+    position: absolute;
+    left: 350px;
+    bottom: 75px;
+    background: radial-gradient(#FFF89E, #FFDE45);
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
+#moon {
+    position: absolute;
+    left: 350px;
+    bottom: 75px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: radial-gradient(#D3D3D3, #555AA6);
+}*/
+
+#sun {
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: #e63d00;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 0 #FF4500,
+        0 0 0 20px #FF6347,
+        0 0 0 40px  #FF7F50,
+        0 0 0 60px #FF8C00,
+        0 0 0 80px #FFA500,
+        0 0 40px 100px #FFD700;
+    animation:
+        sunrise 2s infinite linear forwards,
+        rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes rays {
+    0% {
+        box-shadow: 
+        0 0 0 0 #FF4500,
+        0 0 0 20px #FF6347,
+        0 0 0 40px  #FF7F50,
+        0 0 0 60px #FF8C00,
+        0 0 0 80px #FFA500,
+        0 0 40px 100px #FFD700;
+    }
+    
+    100% {
+        box-shadow: 
+        0 0 0 20px #FF4500,
+        0 0 0 40px #FF6347,
+        0 0 0 60px #FF7F50,
+        0 0 0 80px #FF8C00,
+        0 0 0 100px #FFA500,
+        0 0 40px 100px #FFD700;
+        
+    }
+}
+
+#moon {
+   position: absolute;
+    left: 600px;
+    top: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: #00008B;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 0 #0000CD,
+        0 0 0 20px #4169E1,
+        0 0 0 40px  #4682B4,
+        0 0 0 60px #6495ED,
+        0 0 0 80px #B0C4DE,
+        0 0 40px 100px #87CEEB;
+    animation:
+        moonrise 2s infinite linear forwards,
+        moonrays 2s 2s infinite linear;
+}
+
+@keyframes moonrise {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes moonrays {
+    0% {
+        box-shadow: 
+        0 0 0 0 #0000CD,
+        0 0 0 20px #4169E1,
+        0 0 0 40px  #4682B4,
+        0 0 0 60px #6495ED,
+        0 0 0 80px #B0C4DE,
+        0 0 40px 100px #87CEEB;
+    }
+    
+    100% {
+        box-shadow: 
+        0 0 0 20px #0000CD,
+        0 0 0 40px #4169E1,
+        0 0 0 60px  #4682B4,
+        0 0 0 80px #6495ED,
+        0 0 0 100px #B0C4DE,
+        0 0 40px 100px #87CEEB;
+    }
+}
+
+
+.button {
+    position: relative;
+    top: -40px;
+    right: -360px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF8080;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Consolas";
+}
