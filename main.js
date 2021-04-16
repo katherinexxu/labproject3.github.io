@@ -74,13 +74,12 @@
 
 var sphere = document.querySelector('.sphere');
 var button = document.querySelector('.change');
+var colors = ["#D5F3FE","#343F8A"];
 
 button.addEventListener('click', function(){
 	sphere.classList.toggle('moon')
+
 })
-
-
-
 
 
 
