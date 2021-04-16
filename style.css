@@ -1,4 +1,4 @@
-#sun{
+.sun{
     position: absolute;
     left: 600px;
     top: 300px;
@@ -47,7 +47,7 @@
     }
 }
 
-#moon {
+.moon{
    position: absolute;
     left: 600px;
     top: 300px;
