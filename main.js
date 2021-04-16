@@ -39,11 +39,11 @@
 //         sky.style.backgroundColor = colors[1];
 //       }
 // $(document).ready(function() {
-var sun = document.querySelector('.sun');
-var moon = document.querySelector('.moon');
-var body = document.querySelector('body');
-var div = document.querySelector('div');
-var change = document.querySelector('.change');
+// var sun = document.querySelector('.sun');
+// var moon = document.querySelector('.moon');
+// var body = document.querySelector('body');
+// var div = document.querySelector('div');
+// var change = document.querySelector('.change');
  
 //  function today(){
 //   document.body.css('backgroundColor', '#D5F3FE');
@@ -58,16 +58,32 @@ var change = document.querySelector('.change');
 //   div.classList.add('moon');
 // }
 
-change.onClick(function(event) {
-  document.body.css('backgroundColor', '#D5F3FE');
-  div.removeClass('moon');
-  div.addClass('sun');
-});
+// change.onClick(function(event) {
+//   document.body.css('backgroundColor', '#D5F3FE');
+//   div.removeClass('moon');
+//   div.addClass('sun');
+// });
 
-moon.onClick(function(event){
-  document.body.css('backgroundColor', '#343F8A');
-  div.removeClass('sun');
-  div.addClass('moon');
-});
+// moon.onClick(function(event){
+//   document.body.css('backgroundColor', '#343F8A');
+//   div.removeClass('sun');
+//   div.addClass('moon');
+// });
 
 // });
+
+var sphere = document.querySelector('.sphere');
+var button = document.querySelector('.change');
+
+button.addEventListener('click', function(){
+	sphere.classList.toggle('moon')
+})
+
+
+
+
+
+
+
+
+
