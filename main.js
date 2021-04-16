@@ -38,13 +38,12 @@
 //         circle.setAttribute("id", "moon");
 //         sky.style.backgroundColor = colors[1];
 //       }
-
+// $(document).ready(function() {
 var sun = document.querySelector('.sun');
 var moon = document.querySelector('.moon');
 var body = document.querySelector('body');
 var div = document.querySelector('div');
-var clickday = document.querySelector('.clickday');
-var clicknight = document.querySelector('.clicknight');
+var change = document.querySelector('.change');
  
 //  function today(){
 //   document.body.css('backgroundColor', '#D5F3FE');
@@ -59,15 +58,16 @@ var clicknight = document.querySelector('.clicknight');
 //   div.classList.add('moon');
 // }
 
-clickday.classList(function(event) {
+change.onClick(function(event) {
   document.body.css('backgroundColor', '#D5F3FE');
-  div.classList.remove('moon');
-  div.classList.add('sun');
+  div.removeClass('moon');
+  div.addClass('sun');
 });
 
-
-clicknight.classList(function(event){
+moon.onClick(function(event){
   document.body.css('backgroundColor', '#343F8A');
-  div.classList.remove('sun');
-  div.classList.add('moon');
+  div.removeClass('sun');
+  div.addClass('moon');
 });
+
+// });
